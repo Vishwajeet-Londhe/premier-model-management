@@ -46,6 +46,28 @@ body{
     letter-spacing: -1px;
 }
 
+#nav h1::after{
+    content: "©️";
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    top: 7.5%;
+    left: 19%;
+}
+
+#nav h1::before{
+    content: "model managment";
+    font-family: gilroy;
+    font-weight: 300;
+    font-size: 15px;
+    columns: #666;
+    letter-spacing: 0.1px;
+    position: absolute;
+    top: 14%;
+    left: 10%;
+}
+
 #nav h2{
     /* background-color: blue; */
     height: 100%;
@@ -347,4 +369,47 @@ body{
 .elem:hover img{
     opacity: 1;
     left: 24%;
+}
+
+#marque{
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: red; */
+    padding: 0.8vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 2px black ;
+    color: transparent;
+    font-family: monument;
+    /* background-color: blue; */
+    margin-right: 16px;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+#footer{
+    height: 100%;
+    width: 100%;
 }
