@@ -44,6 +44,11 @@ body{
     font-family: monument;
     font-size: 45px;
     letter-spacing: -1px;
+    /* position: relative; */
+}
+
+#nav h3{
+    display: none;
 }
 
 #nav h1::after{
@@ -412,4 +417,139 @@ body{
 #footer{
     height: 100%;
     width: 100%;
+}
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    #nav{
+        height: 8vh;
+        margin-top: 20px;
+        padding: 0 5vw;
+    }
+
+    #nav h3{
+        display: block;
+    }
+    
+    #nav h1{
+        width: 40%;
+        justify-content: flex-start;
+        font-size: 24px;
+    }
+    
+    #nav h1::after{
+        display: none;
+    }
+    
+    #nav h1::before{
+        display: none;
+    }
+
+    #nav h2{
+        display: none;
+    }
+    
+    #center{
+        height: 50%;
+        width: 100%;
+        /* background-color: red; */
+        padding: 3vw 4vw;
+        position: relative;
+    }
+    
+    #content{
+        height: 100%;
+        width: 100%;
+        background-color: blue;
+        position: relative;
+    }
+    
+    #content video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #overlay{
+        width: 100%;
+        height: fit-content;
+        position: absolute;
+        bottom:0 ;
+        /* background-color: red; */
+        padding: 3vw;
+        color: #fff;
+    }
+    
+    #over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2vw;
+    }
+    
+    #over1 h1{
+        font-family: monument;
+        font-size: 5.6vw;
+        font-weight: 100;
+    }
+    
+    #over1 h2{
+        font-size: 2vw;
+        padding: 3.2vw 3vw;
+        /* background-color: blue; */
+        border-radius: 50%;
+        border: 2px solid #fff;
+    }
+    
+    #over2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 2px solid #fff;
+        padding: 1.5vw 0;
+    }
+    
+    #over2 h4{
+        font-size: 3vw;
+        font-weight: 500;
+    }
+    
+    #over2 img{
+        height: 5vw;
+    }
+    
+    #scroll{
+        height: 20vh;
+        width: 100%;
+        /* background-color: red; */
+        /* padding: 1vw; */
+        white-space: nowrap;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    #container{
+        height: 100%;
+        width: 210%;
+        /* background-color: blue; */
+        display: inline-block;
+        padding: 2vw;
+        animation-name: anime;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    #scroll img{
+        /* display: none; */
+        height: 100%;
+        border-radius: 50%;
+        width: 15.5%;
+        margin: 1vw;
+        object-fit: cover;
+        object-position: 30% 30%;
+    }
 }
