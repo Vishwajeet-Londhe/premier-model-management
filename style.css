@@ -10,6 +10,10 @@ html,body{
     height: 100%;
 }
 
+body{
+    background-color: #f8f8f8;
+}
+
 #main{
     width: 100%;
     height: 100%;
@@ -239,4 +243,108 @@ html,body{
     height: 70%;
     width: 100%;
     object-fit: cover;
+}
+
+#page2text{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#page2text h5{
+    font-size: 2.45vw;
+    /* color: red; */
+}
+
+#page2text h6{
+    font-size: 1.5vw;
+    /* color: red; */
+    padding-left: 3vw;
+    letter-spacing: -0.1vw;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+
+#page3>h1{
+    text-align: center;
+    font-family: monument;
+    text-transform: uppercase;
+    font-size: 3vw;
+    /* font-weight: 900; */
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+
+.elem{
+    height: 15.5vh;
+    width: 100%;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    position: relative;
+    transform: all ease 0.7s;
+}
+
+.elem img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
+    left: 25%;
+    opacity: 0;
+    transition: all ease 0.7s;
+    top: 0%;
+}
+
+.elem h4{
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 6%;
+}
+
+.elem .elem-part2{
+    width: 45%;
+    /* background-color: red; */
+}
+
+.elem-part2 h1{
+    font-size: 2.7vw;
+    font-weight: 500;
+}
+
+.elem-part2 h5{
+    font-size: 0.8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+}
+
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+
+.elem:hover{
+    background-color: #e6e6e6;
+}
+
+.elem:hover img{
+    opacity: 1;
+    left: 24%;
 }
